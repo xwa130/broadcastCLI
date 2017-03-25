@@ -1,0 +1,22 @@
+{
+  "name": "broadcast",
+  "version": "1.0.0",
+  "description": "CLI utility to broadcast emails",
+  "main": "broadcast.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xwa130/broadcastCLI.git"
+  },
+  "author": "Xinyi Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xwa130/broadcastCLI/issues"
+  },
+  "homepage": "https://github.com/xwa130/broadcastCLI#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
