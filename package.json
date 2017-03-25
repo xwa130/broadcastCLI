@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/xwa130/broadcastCLI#readme",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "csv": "^1.1.1",
+    "inquirer": "^3.0.6"
   }
 }
