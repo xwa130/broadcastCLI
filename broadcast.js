@@ -1,3 +1,4 @@
+require('dotenv').config();
 const program = require('commander');
 const csv = require('csv');
 const fs = require('fs');

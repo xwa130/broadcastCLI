@@ -19,6 +19,8 @@
   "dependencies": {
     "commander": "^2.9.0",
     "csv": "^1.1.1",
-    "inquirer": "^3.0.6"
+    "dotenv": "^4.0.0",
+    "inquirer": "^3.0.6",
+    "sendgrid": "^4.8.4"
   }
 }
