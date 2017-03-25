@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const helper = require('sendgrid').mail;
 const async = require('async');
 const chalk = require('chalk');
+const template = require('./template.js').template;
 
 let questions = [
   {
@@ -24,7 +25,6 @@ let questions = [
 let contactList = [];
 
 const __sendEmail = function (to, from, subject, callback) {
-  let template = "Wishing you a Merry Christmas and a prosperous year ahead.";
   let fromEmail = new helper.Email(from.email, from.name);
   let toEmail = new helper.Email(to.email, to.name);
   let body = new helper.Content("text/plain", template);
