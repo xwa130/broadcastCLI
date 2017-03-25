@@ -51,15 +51,15 @@ module.exports = {
   },
 
   receiveAndSendEmail () {
-      inquirer.prompt(questions).then(function (ans) {
-        async.each(contactList, function (recipient, fn) {
-          __sendEmail(recipient, ans.sender, ans.subject, fn);
-        }, function (err) {
-          if (err) {
-            return console.error(chalk.red(err.message));
-          }
-          console.log(chalk.green('Success'));
-        });
+    inquirer.prompt(questions).then(function (ans) {
+      async.each(contactList, function (recipient, fn) {
+        __sendEmail(recipient, ans.sender, ans.subject, fn);
+      }, function (err) {
+        if (err) {
+          return console.error(chalk.red(err.message));
+        }
+        console.log(chalk.green('Success'));
       });
+    });
   }
 };
