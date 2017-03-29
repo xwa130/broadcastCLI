@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const main = require('./broadcastMain.js').main;
+const main = require('./broadcastMain.js');
 
 try {
   main();

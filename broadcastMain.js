@@ -3,8 +3,7 @@ const parse = require('csv').parse;
 const fs = require('fs');
 const lib = require('./broadcastHelper.js');
 
-module.exports = {
-  main () {
+module.exports = () => {
     program
       .version('1.0.0')
       .option('-l, --list [list]', 'list of customers in CSV file')
@@ -19,5 +18,4 @@ module.exports = {
       .on('error', function(err) { return console.error(err.message); })
       .on('data', lib.addContact)
       .on("end", lib.receiveAndSendEmail);
-  }
 };
